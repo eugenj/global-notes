@@ -1,0 +1,1 @@
+C:\dev\KDiff3\kdiff3.exe %base %mine %theirs -o %merged
