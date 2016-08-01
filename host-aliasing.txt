@@ -1,0 +1,19 @@
+apache httpd
+
+<VirtualHost coreefile:80>
+  ProxyPreserveHost On
+  ProxyRequests Off
+  ServerName coreefile:80
+  ServerAlias coreefile:80
+  ProxyPass / http://127.0.0.1:81/
+  ProxyPassReverse / http://127.0.0.1:81/
+</VirtualHost>
+
+<VirtualHost corecms:80>
+  ProxyPreserveHost On
+  ProxyRequests Off
+  ServerName corecms:80
+  ServerAlias corecms:80
+  ProxyPass / http://127.0.0.1:82/
+  ProxyPassReverse / http://127.0.0.1:82/
+</VirtualHost>
