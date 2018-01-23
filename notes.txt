@@ -1,3 +1,4 @@
+
 SELECT  dest.text, deqs.last_execution_time
 FROM    sys.dm_exec_query_stats AS deqs
         CROSS APPLY sys.dm_exec_sql_text(deqs.sql_handle) AS dest
@@ -5,3 +6,26 @@ WHERE   deqs.last_execution_time > '06/06/2016 12:16:00'
         --AND dest.text LIKE 'WITH%';
 order by deqs.last_execution_time desc
 
+===GIT============
+edit last commit message
+git commit --amend 
+
+======================
+USE [CoreEfile_QA];
+
+ALTER AUTHORIZATION ON Fulltext Catalog::DefaultCatalog TO [dbo]; 
+ALTER AUTHORIZATION ON Role::CTrackRole TO [dbo]; 
+ALTER AUTHORIZATION ON Schema::CTrack TO [dbo]; 
+
+Drop user CTrackAdmin;
+Drop user CTrackUser;
+
+CREATE USER [CTrackUser] FOR LOGIN [CTrackUser];
+ALTER USER [CTrackUser] WITH DEFAULT_SCHEMA=[CTrack];
+ALTER ROLE [CTrackRole] ADD MEMBER [CTrackUser];
+ALTER ROLE [db_owner] ADD MEMBER [CTrackUser];
+
+CREATE USER CTrackAdmin FOR LOGIN CTrackAdmin;
+ALTER USER CTrackAdmin WITH DEFAULT_SCHEMA=[CTrack];
+ALTER ROLE [CTrackRole] ADD MEMBER CTrackAdmin;
+ALTER ROLE [db_owner] ADD MEMBER CTrackAdmin;

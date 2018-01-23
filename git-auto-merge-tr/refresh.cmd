@@ -1,30 +1,50 @@
 @echo off
-set "modules=cms base criminal corecms niem tag"
-set "gitModules=e_product/cms.git e_core/base.git e_plugin/criminal.git e_coreproject/corecms.git e_plugin/niem.git e_core/tag.git"
+rem set clean=clean
 
-rem set "modules=cms base tag criminal abuseneglect corecms coreefile"
-rem set "gitModules=e_core/base.git e_core/tag.git e_plugin/criminal.git e_plugin/abuseneglect.git e_coreproject/corecms.git e_coreproject/coreefile.git e_product/cms.git"
+rem set "targetBranch=ECORE-1058"
+rem set "sourceBranch=origin/feature/workflow-migration"
 
-echo ==============================================================
-for %%m in (%modules%) do (
-	echo --------------------------------------------------------------
-	echo Removing %%m
-	rmdir /S /Q %%m
+set "targetBranch=feature/workflow-migration"
+set "sourceBranch=origin/development"
+
+set "modules=base cms corecms efile coreefile workflow"
+set "gitModules=e_lib/base.git e_lib/cms.git e_project/corecms.git e_lib/efile.git e_project/coreefile.git e_lib/workflow.git"
+
+if defined clean (
+	echo ==Making up============================================================
+	for %%m in (%modules%) do (
+		echo --------------------------------------------------------------
+		echo Removing %%m
+		rmdir /S /Q %%m
+	)
+	echo ==============================================================
+	for %%m in (%gitModules%) do (
+		echo --------------------------------------------------------------
+		echo Cloning %%m
+		git clone https://UC191752@trcmsstash.int.thomsonreuters.com/scm/%%m
+	)
 )
-echo ==============================================================
-for %%m in (%gitModules%) do (
-    echo --------------------------------------------------------------
-    echo Cloning %%m
-	git clone https://UC191752@trcmsstash.int.thomsonreuters.com/scm/%%m
-)
-echo ==============================================================
+
 for %%m in (%modules%) do (
+	echo =====Working with %%m =========================================================
 	pushd %%m
-	git checkout feature/plea-disposition
-	echo --------------------------------------------------------------
-	echo Merging %%m
-	git merge -v -m "Merging development into feature branch" origin/development
+    echo --Fetching---------------------------------------------------------------------------
+	git fetch
+	echo --Removing local branch %targetBranch%-----------------------------------------------
+	git checkout development
+	git branch -d %targetBranch%
+	echo --Switching to %targetBranch%--------------------------------------------------------
+	git checkout %targetBranch%
+	echo --Merging from %sourceBranch%--------------------------------------------------------
+	git merge -v -m "Merging %sourceBranch% into %targetBranch%" %sourceBranch%
 	rem --ff-only
+	popd
+)
+echo ==Done. Preparing TO PUSH STAGE=================================================================
+for %%m in (%modules%) do (
+	echo =====Status of %%m =========================================================
+	pushd %%m
+    git status
 	popd
 )
 pause
