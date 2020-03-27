@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="StudySettings">
+    <StudyTaskManager>
+      <option name="course">
+        <RemoteCourse>
+          <option name="adaptive" value="true" />
+          <option name="authors">
+            <list />
+          </option>
+          <option name="courseMode" value="Study" />
+          <option name="courseType" value="PyCharm" />
+          <option name="description" value="This is a Stepik Adaptive course.&#10;&#10;Adaptive problem set to learn Python. &#13;&#10;Join the course and you can try out the first prototype of the adaptive engine! &#10;&#10;Initially, the adaptive system may behave somewhat randomly, but the more problems you solve, the smarter it becomes!" />
+          <option name="id" value="568" />
+          <option name="instructors">
+            <list />
+          </option>
+          <option name="language" value="Python" />
+          <option name="languageCode" value="en" />
+          <option name="lessons">
+            <list>
+              <Lesson>
+                <option name="id" value="28057" />
+                <option name="index" value="1" />
+                <option name="name" value="Adaptive" />
+                <option name="updateDate" />
+                <option name="taskList">
+                  <list>
+                    <CodeTask>
+                      <option name="index" value="1" />
+                      <option name="name" value="Transform the symbol" />
+                      <option name="status" value="Solved" />
+                      <option name="stepId" value="102445" />
+                      <option name="stepikPosition" value="1" />
+                      <option name="taskTexts">
+                        <map>
+                          <entry key="task" value="&lt;p&gt;Transform the symbol into uppercase.&lt;/p&gt;&#10;&#10;&lt;p&gt;&lt;b&gt;Input data&lt;/b&gt;&lt;/p&gt;&#10;&#10;&lt;p&gt;A single symbol.&lt;/p&gt;&#10;&#10;&lt;p&gt;&lt;b&gt;Output data&lt;/b&gt;&lt;/p&gt;&#10;&#10;&lt;p&gt;If the entered symbol is a lowercase letter of the Latin alphabet,&#10;output the same uppercase letter. Otherwise, output the symbol that was&#10;entered.&lt;/p&gt;&lt;br&gt;&lt;b&gt;Sample Input:&lt;/b&gt;&lt;br&gt;b&lt;br&gt;&lt;b&gt;Sample Output:&lt;/b&gt;&lt;br&gt;B&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Memory limit&lt;/b&gt;: 256 Mb&lt;br&gt;&lt;b&gt;Time limit&lt;/b&gt;: 1s&lt;br&gt;&lt;br&gt;" />
+                        </map>
+                      </option>
+                      <option name="testsText">
+                        <map>
+                          <entry key="tests.py" value="from test_helper import check_samples&#10;&#10;if __name__ == '__main__':&#10;    check_samples(samples=[[&quot;b&quot;,&quot;B&quot;]])" />
+                        </map>
+                      </option>
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="task.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list />
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="0" />
+                                <option name="trackChanges" value="true" />
+                                <option name="trackLengths" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="task.py" />
+                                <option name="text" value="# put your python code here" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </CodeTask>
+                    <CodeTask>
+                      <option name="index" value="2" />
+                      <option name="name" value="Continuous backpack" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepId" value="93823" />
+                      <option name="stepikPosition" value="1" />
+                      <option name="taskTexts">
+                        <map>
+                          <entry key="task" value="&lt;p&gt;&lt;b&gt;Continuous&#10;backpack&lt;/b&gt;&lt;/p&gt;&#10;&#10;&lt;p class=&quot;wysiwyg-text-align-left&quot;&gt;First line contain the number of items $1 \le n \le 10^3$ and&#10;capacity of the backpack $0 \le W \le 2 \cdot 10^6$. Each of the&#10;next $n$ lines specifies the cost $0 \le c_i \le 2\cdot 10^6$ and volume $0 \lt w_i \le 2\cdot 10^6$ of an item ($n$, $W$, $c_i$,&#10;$w_i$ — integers).&#10;Output the maximum cost of parts of the items (you can separate any part from&#10;each item, its cost and volume will decrease proportionally), placed in the&#10;backpack, with an accuracy of not less than three decimal places.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;b&gt;Sample Input:&lt;/b&gt;&lt;br&gt;3 50&lt;br&gt;60 20&lt;br&gt;100 50&lt;br&gt;120 30&lt;br&gt;&lt;br&gt;&lt;b&gt;Sample Output:&lt;/b&gt;&lt;br&gt;180.000&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Memory limit&lt;/b&gt;: 256 Mb&lt;br&gt;&lt;b&gt;Time limit&lt;/b&gt;: 5s&lt;br&gt;&lt;br&gt;" />
+                        </map>
+                      </option>
+                      <option name="testsText">
+                        <map>
+                          <entry key="tests.py" value="from test_helper import check_samples&#10;&#10;if __name__ == '__main__':&#10;    check_samples(samples=[[&quot;3 50\n60 20\n100 50\n120 30\n&quot;,&quot;180.000&quot;]])" />
+                        </map>
+                      </option>
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="task.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list />
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="trackLengths" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="task.py" />
+                                <option name="text" value="" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </CodeTask>
+                  </list>
+                </option>
+              </Lesson>
+            </list>
+          </option>
+          <option name="loadSolutions" value="true" />
+          <option name="name" value="Adaptive Python" />
+          <option name="sections">
+            <list>
+              <option value="1785" />
+              <option value="1786" />
+            </list>
+          </option>
+          <option name="type" value="pycharm Python" />
+          <option name="updateDate" value="1507321513000" />
+        </RemoteCourse>
+      </option>
+      <option name="toolWindowMode" value="TEXT" />
+      <option name="turnEditingMode" value="false" />
+      <option name="VERSION" value="7" />
+    </StudyTaskManager>
+  </component>
+</project>
