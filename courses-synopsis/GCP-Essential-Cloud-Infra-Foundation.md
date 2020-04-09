@@ -208,6 +208,7 @@ Public or custom images
 Images charged per second with 1 min minimum (some exceptions like MSSQL min 10 min and per minute)
 
 Boot disk is durable (can survive VM termination)
+
 ### Persistent disks
 * attached to a VM through the network interface
 * durable
@@ -220,8 +221,16 @@ Boot disk is durable (can survive VM termination)
   * RO mode to multiple VM
   * Encryption keys (Google managed, customer managed, customer supplied)
 
+Local SSD survive just reboot
+RAM disks - very volatile
 
+Snapshot service can help with migration/changing disk type
+You can't shrink disks
 
-
+## Metadata
+Custom metadata
+Keys:
+startup-script-url
+shutdown-script-url
 
 

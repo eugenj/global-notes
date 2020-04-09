@@ -203,7 +203,7 @@ Google APIs Client Libraries
 	* Transactional
 	* Complex queries
 
-* Lab
+## Lab
 	gsutil mb -l <location> gs://$DEVSHELL_PROJECT_ID
 	gsutil defacl ch -u AllUsers:R gs://$DEVSHELL_PROJECT_ID
 	
