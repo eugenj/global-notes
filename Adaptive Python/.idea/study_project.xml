@@ -20,7 +20,7 @@
           <option name="lessons">
             <list>
               <Lesson>
-                <option name="id" value="28057" />
+                <option name="id" value="28073" />
                 <option name="index" value="1" />
                 <option name="name" value="Adaptive" />
                 <option name="updateDate" />
@@ -67,7 +67,7 @@
                     <CodeTask>
                       <option name="index" value="2" />
                       <option name="name" value="Continuous backpack" />
-                      <option name="status" value="Unchecked" />
+                      <option name="status" value="Solved" />
                       <option name="stepId" value="93823" />
                       <option name="stepikPosition" value="1" />
                       <option name="taskTexts">
@@ -96,6 +96,82 @@
                                 <option name="userCreated" value="false" />
                                 <option name="name" value="task.py" />
                                 <option name="text" value="" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </CodeTask>
+                    <CodeTask>
+                      <option name="index" value="3" />
+                      <option name="name" value="Points" />
+                      <option name="status" value="Solved" />
+                      <option name="stepId" value="108923" />
+                      <option name="stepikPosition" value="1" />
+                      <option name="taskTexts">
+                        <map>
+                          <entry key="task" value="&lt;p&gt;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&lt;/p&gt;&lt;p&gt;Output all the given points in ascending order of their distance&#10;from the origin of the coordinate system. &lt;/p&gt;&#10;&#10;&lt;p&gt;&lt;b&gt;Input data&lt;/b&gt;&lt;/p&gt;&#10;&#10;&lt;p&gt;The program gets the set of points in the plane as input. First goes&#10;the number of points&lt;i&gt; – n&lt;/i&gt;, then is a&#10;sequence of&lt;i&gt; n&lt;/i&gt; lines, each of which&#10;contains two numbers: the coordinates of the point.  The value &lt;i&gt;n&lt;/i&gt; does not&#10;exceed 100, all of the initial coordinates are integers, not exceeding 1000.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;b&gt;Sample Input:&lt;/b&gt;&lt;br&gt;2&lt;br&gt;1 2&lt;br&gt;2 3&lt;br&gt;&lt;b&gt;Sample Output:&lt;/b&gt;&lt;br&gt;1 2&lt;br&gt;2 3&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Memory limit&lt;/b&gt;: 256 Mb&lt;br&gt;&lt;b&gt;Time limit&lt;/b&gt;: 1s&lt;br&gt;&lt;br&gt;" />
+                        </map>
+                      </option>
+                      <option name="testsText">
+                        <map>
+                          <entry key="tests.py" value="from test_helper import check_samples&#10;&#10;if __name__ == '__main__':&#10;    check_samples(samples=[[&quot;2\n1 2\n2 3&quot;,&quot;1 2\n2 3&quot;]])" />
+                        </map>
+                      </option>
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="task.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list />
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="trackLengths" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="task.py" />
+                                <option name="text" value="# put your python code here" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </CodeTask>
+                    <CodeTask>
+                      <option name="index" value="4" />
+                      <option name="name" value="Various sum" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepId" value="103562" />
+                      <option name="stepikPosition" value="1" />
+                      <option name="taskTexts">
+                        <map>
+                          <entry key="task" value="&lt;p&gt;Given N integers A&lt;span class=&quot;wysiwyg-font-sub&quot;&gt;1&lt;/span&gt;, A&lt;span class=&quot;wysiwyg-font-sub&quot;&gt;2&lt;/span&gt;, ..., A&lt;span class=&quot;wysiwyg-font-sub&quot;&gt;N&lt;/span&gt;. You should find the number of&#10;various sum values of k&lt;span class=&quot;wysiwyg-font-sub&quot;&gt;1&lt;/span&gt;A&lt;span class=&quot;wysiwyg-font-sub&quot;&gt;1&lt;/span&gt; + k&lt;span class=&quot;wysiwyg-font-sub&quot;&gt;2&lt;/span&gt;A&lt;span class=&quot;wysiwyg-font-sub&quot;&gt;2&lt;/span&gt; + ... + k&lt;span class=&quot;wysiwyg-font-sub&quot;&gt;N&lt;/span&gt;A&lt;span class=&quot;wysiwyg-font-sub&quot;&gt;N&lt;/span&gt;.&lt;/p&gt;&#10;&#10;&lt;p&gt;&lt;b&gt;Input data&lt;/b&gt;&lt;/p&gt;&#10;&#10;&lt;p&gt;The first line contains number N, the second – A&lt;span class=&quot;wysiwyg-font-sub&quot;&gt;1&lt;/span&gt;, A&lt;span class=&quot;wysiwyg-font-sub&quot;&gt;2&lt;/span&gt;, ..., A&lt;span class=&quot;wysiwyg-font-sub&quot;&gt;N&lt;/span&gt; separated by a space. All numbers are&lt;b&gt; integers:&lt;/b&gt;&lt;/p&gt;&lt;p class=&quot;wysiwyg-text-align-center&quot;&gt;1 ≤ N ≤ 500,  &lt;/p&gt;&lt;p class=&quot;wysiwyg-text-align-center&quot;&gt;&lt;span&gt;0 ≤ A&lt;/span&gt;&lt;span class=&quot;wysiwyg-font-sub&quot;&gt;i&lt;/span&gt;&lt;span&gt; ≤100, &lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;wysiwyg-text-align-center&quot;&gt;0 ≤ k&lt;span class=&quot;wysiwyg-font-sub&quot;&gt;i&lt;/span&gt; ≤ 1.&lt;/p&gt;&lt;p class=&quot;wysiwyg-text-align-left&quot;&gt;&lt;b&gt;Output data&lt;/b&gt;&lt;/p&gt;&#10;&#10;&lt;p&gt;Output the number of the various sum values.&lt;/p&gt;&lt;br&gt;&lt;b&gt;Sample Input:&lt;/b&gt;&lt;br&gt;3&lt;br&gt;1 2 3&lt;br&gt;&lt;br&gt;&lt;b&gt;Sample Output:&lt;/b&gt;&lt;br&gt;7&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Memory limit&lt;/b&gt;: 256 Mb&lt;br&gt;&lt;b&gt;Time limit&lt;/b&gt;: 5s&lt;br&gt;&lt;br&gt;" />
+                        </map>
+                      </option>
+                      <option name="testsText">
+                        <map>
+                          <entry key="tests.py" value="from test_helper import check_samples&#10;&#10;if __name__ == '__main__':&#10;    check_samples(samples=[[&quot;3\n1 2 3\n&quot;,&quot;7&quot;]])" />
+                        </map>
+                      </option>
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="task.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list />
+                                </option>
+                                <option name="highlightErrors" value="false" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="trackLengths" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="task.py" />
+                                <option name="text" value="# put your python code here" />
                               </TaskFile>
                             </value>
                           </entry>

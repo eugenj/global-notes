@@ -32,5 +32,5 @@ then
 	echo "!!!!FOUND FOUND!!!!"
 	echo "$WHAT_AVAL"
 	
-	notify.sh $WHAT_AVAL
+	./notify.sh $WHAT_AVAL
 fi

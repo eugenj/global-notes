@@ -1,24 +1,26 @@
-n = int(input())
-w = int(input())
+n, w = list(map(int, input().split(' ')))
 
-costs = []
-volumes = []
+items = []
 
 for i in range(n):
-    costs.append(int(input()))
-    volumes.append(int(input()))
+    ci, wi = list(map(int, input().split(' ')))
+    items.append((ci, wi, ci / wi))
 
-items = zip(costs, volumes)
-items = sorted(items, key=lambda t: t[0])
-
+items = sorted(items, key=lambda t: t[2], reverse=True)
 current_volume = 0
 current_cost = 0
 
+used_all = True
 for next_item in items:
-    if current_volume + next_item[1] < w:
+    if current_volume + next_item[1] <= w:
         current_cost += next_item[0]
         current_volume += next_item[1]
+    else:
+        used_all = False
+        break
 
-portion = (w - current_volume) / next_item[1]
-current_cost += round(next_item[0] * portion, 3)
-print("%f.3" % current_cost)
+if not used_all:
+    portion = (w - current_volume) / next_item[1]
+    current_cost += next_item[0] * portion
+
+print("%.3f" % current_cost)

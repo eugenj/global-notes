@@ -1,5 +1,25 @@
+Payed AWS Solution Architect Associate
+https://www.udemy.com/aws-certified-solutions-architect-associate/learn/v4/overview
+
+BigData EPAM - additional videoss
+https://kb.epam.com/display/EPMCBDCC/Career+Development+Program+-+Big+Data
+
 https://www.datacamp.com/tracks/data-scientist-with-python
 $29 per month
 
 https://www.coursera.org/learn/machine-learning/home/welcome
 weekly
+
+curl -H "Content-Type: application/json" -X POST -d "{\"message\": \"Hello1!\"}" https://us-central1-ez-exploration.cloudfunctions.net/function-1
+curl -H "Content-Type: application/json" -X POST -d "{\"message\": \"Hello2!\"}" https://datacode.org/function-1
+
+https://www.lynda.com/Apache-Spark-tutorials/Welcome/559180/674612-4.html
+
+
+https://academy.datastax.com/courses
+
+
+https://research.hackerrank.com/developer-skills/2018/
+AngularJS
+Node.js
+React
