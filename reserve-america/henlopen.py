@@ -1,5 +1,6 @@
 import re
 import urllib3
+import winsound
 
 http = urllib3.PoolManager()
 response = http.request('GET', 'https://www.reserveamerica.com/explore/cape-henlopen-state-park/DE/360108/campsites?arrivalDate=2022-07-22&lengthOfStay=2&availStartDate=2022-07-22&pageNumber=0')
@@ -29,5 +30,6 @@ available_sites = list(filter(lambda site: site.available, sites))
 if len(available_sites) > 0:
     sites_str = '\n'.join(str(e) for e in available_sites)
     print('Available of ' + str(len(available_sites)) + ': \n' + sites_str)
+    winsound.Beep(440, 5000)
 else:
         print('Nothing available')
